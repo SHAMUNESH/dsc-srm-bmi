@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSC-SRM BMI Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" >
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Ubuntu+Condensed&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <center>
+    <div class="alert alert-success alert-dismissible" id="good">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Wow!</strong> You are Healthy and Fit :)
+      </div>
+    </center>
+    <center>
+        <div class="alert alert-danger alert-dismissible" id="bad">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Ahmm!</strong> You come under Overweight! But don't worry you can do it :)
+          </div>
+    </center>
+ 
+    
+ <div class="container">
+   
+        <h2>DSC-SRM BMI Calculator</h2>
+        <p class="text">Height</p>
+        <input type="text" id="height">
+        <p class="text">Weight</p>
+        <input type="text" id="weight">
+        <p id="output"></p>
+        <button id="btn" onClick="calculateBMI()">Calculate</button>
+        <p id="msg">Please enter height in [cm] and weight in [kg]</p>
+    
+</div>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   
+<script src="./app.js"></script>
+</body>
+</html>
